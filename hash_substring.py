@@ -1,17 +1,16 @@
 # python3
 
+
 def read_input():
     choice = input()
 
     if "F" in choice:
-        filename = '06'
-        
-        useFile = 'tests/' + filename
+        useFile = 'tests/06'
         file1 = open(useFile, 'r')
         lines = file1.readlines()
 
-        pattern = lines[0]
-        text = lines[1]
+        pattern = lines[0].rstrip()
+        text = lines[1].rstrip()
 
     elif "I" in choice:
         # input from keyboard
