@@ -4,11 +4,8 @@ def read_input():
     choice = input()
 
     if "F" in choice:
-        filename = input()
-
-        if "a" in filename:
-            return("Incorrect file name")
-
+        filename = '06'
+        
         useFile = 'tests/' + filename
         file1 = open(useFile, 'r')
         lines = file1.readlines()
